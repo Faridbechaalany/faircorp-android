@@ -7,7 +7,7 @@ class ApiServices {
     val windowsApiService : WindowApiService by lazy {
         Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
-            .baseUrl("http://985b-193-49-174-63.ngrok.io/api/")
+            .baseUrl("https://farid-bechaalany.cleverapps.io/api/")
             .build()
             .create(WindowApiService::class.java)
     }
@@ -15,7 +15,7 @@ class ApiServices {
     val roomApiService: RoomApiService by lazy {
         Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
-            .baseUrl("http://985b-193-49-174-63.ngrok.io/api/")
+            .baseUrl("https://farid-bechaalany.cleverapps.io/api/")
             .build()
             .create(RoomApiService::class.java)
     }
@@ -23,7 +23,7 @@ class ApiServices {
     val buildingApiService: BuildingApiService by lazy {
         Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
-            .baseUrl("http://985b-193-49-174-63.ngrok.io/api/")
+            .baseUrl("https://farid-bechaalany.cleverapps.io/api/")
             .build()
             .create(BuildingApiService::class.java)
     }
